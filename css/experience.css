@@ -1,0 +1,78 @@
+main h1 {
+  padding: 20px 0;
+}
+
+/* Estilos de las cartas de experiencia */
+
+.experience-card {
+  display: flex;
+}
+
+.line {
+  width: 2px;
+  min-height: max-content;
+  position: relative;
+  background-color: rgba(255, 255, 255, 15%);
+  margin-right: 20px;
+}
+
+.line::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #facc15;
+  border-radius: 100%;
+  position: absolute;
+  top: 35px;
+  left: -4px;
+}
+
+.experience-card h2 {
+  color: #facc15;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.info-card h2 {
+  color: #facc15;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.info-card p {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.info-card span {
+  opacity: 80%;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.info-card {
+  width: 40%;
+  padding: 20px 0;
+}
+
+.description-card {
+  width: 60%;
+  padding: 20px 0;
+}
+
+.description-card p {
+  color: #dddddd;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.description-card button {
+  color: #fef085;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  align-content: center;
+}
