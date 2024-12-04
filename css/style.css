@@ -44,6 +44,8 @@ header {
 #nav ul {
   display: flex;
   justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 #nav ul li {
@@ -81,14 +83,15 @@ main {
   margin: 0 10px;
 }
 
-.buttonStyle {
-  padding: 4px 12px;
+.aStyle {
+  padding: 6px 12px;
   margin: 0 5px;
   background-color: #1f2937;
   color: #ffffffcc;
   font-size: 14px;
   border: 0.5px solid rgb(80, 80, 80);
   border-radius: 20px;
+  text-decoration: none;
 }
 
 .part1 button {
@@ -156,4 +159,23 @@ main {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Effectos de entrada */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Mueve el elemento hacia abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Su posición original */
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out; /* Duración y suavidad del efecto */
+  animation-fill-mode: forwards; /* Asegura que el estado final se mantenga */
+  opacity: 0; /* Opcional para que no se vea antes de animarse */
 }

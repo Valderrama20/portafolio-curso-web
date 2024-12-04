@@ -29,9 +29,10 @@ const proyects = [
   },
 ];
 
-const createCard = ({ img, title, description }) => {
+const createCard = ({ img, title, description }, index) => {
   const card = document.createElement("div");
-  card.classList.add("proyect-container");
+  card.classList.add("proyect-container", "fade-in");
+  card.style.animationDelay = `${index / 10}s`;
   card.innerHTML = `<div class="img-container">
                         <img src=${img} alt="Img de proyecto">
                     </div>
@@ -42,14 +43,14 @@ const createCard = ({ img, title, description }) => {
                         </div>
                         <p> ${description} </p>
                         <div>
-                            <button class="buttonStyle">
+                            <a class="aStyle">
                                  <i class="fa-brands fa-github"></i>
                                 Code
-                            </button>
-                            <button class="buttonStyle">
+                            </a>
+                            <a class="aStyle">
                                 <i class="fa-solid fa-link"></i>
                                 Preview
-                            </button>
+                            </a>
                         </div>
                     </div>`;
   return card;
@@ -57,5 +58,7 @@ const createCard = ({ img, title, description }) => {
 
 (() => {
   const cardContainer = document.getElementById("cardContainer");
-  proyects.forEach((proyect) => cardContainer.appendChild(createCard(proyect)));
+  proyects.forEach((proyect, index) =>
+    cardContainer.appendChild(createCard(proyect, index))
+  );
 })();

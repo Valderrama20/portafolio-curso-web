@@ -1,0 +1,35 @@
+/* Estilos de sobre mi */
+
+.about {
+  display: flex;
+}
+
+.about .container1 {
+  width: 65%;
+  animation-delay: 0.2s;
+}
+
+.about p {
+  margin: 15px 0;
+  color: #d1d5db;
+}
+
+.about p > span {
+  color: #fef9c3;
+}
+
+.about .container2 {
+  text-align: center;
+  align-content: center;
+  width: 35%;
+  animation-delay: 0.2s;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 20px;
+  transform: rotate(0.006turn);
+}
