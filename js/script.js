@@ -1,5 +1,14 @@
 const proyects = [
   {
+    img: "img/proyecto5.png",
+    title: "Job Match",
+    description: `JobMatch es una innovadora aplicación creada para resolver la dificultad común de encontrar profesionales 
+    calificados para tareas del hogar. Nuestra plataforma facilita a los usuarios la búsqueda de profesionales confiables y 
+    altamente capacitados para una amplia gama de servicios, desde reparaciones de electrodomésticos hasta remodelaciones. 
+    Además, brinda a los profesionales la oportunidad de expandir su alcance, ofreciendo sus servicios a una base de clientes
+    más amplia y mejorando su visibilidad y posibilidades de trabajo.`,
+  },
+  {
     img: "img/proyecto1.png",
     title: "Prueba de titulo",
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsum veritatis maiores
@@ -15,10 +24,12 @@ const proyects = [
   },
   {
     img: "img/proyecto3.png",
-    title: "Prueba de titulo",
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsum veritatis maiores
-                        praesentium eligendi adipisci consectetur libero, rerum odio iste perferendis, corrupti est
-                        facere exercitationem eum suscipit totam! Fugiat, maxime?`,
+    title: "Look House",
+    description: `Colaboré en un equipo de alto rendimiento en el desarrollo de una plataforma web, utilizando 
+      sprints semanales para avanzar de manera eficiente. A lo largo del proceso, presentamos progresos constantes
+      al Product Owner, garantizando una comunicación efectiva y alineación con los objetivos. Aplicamos diversas 
+      tecnologías y lenguajes aprendidos en el bootcamp de Henry, con el objetivo de mejorar la experiencia de los
+      usuarios al momento de alquilar una vivienda, simplificando cada paso del proceso.`,
   },
   {
     img: "img/proyecto4.png",
