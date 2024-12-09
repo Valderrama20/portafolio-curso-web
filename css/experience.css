@@ -76,3 +76,26 @@ main h1 {
   font-size: 16px;
   align-content: center;
 }
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .experience-card {
+    flex-direction: column;
+
+    border-bottom: 1px solid #facc15;
+  }
+
+  .info-card {
+    width: 100%;
+  }
+
+  .description-card {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .line {
+    display: none;
+  }
+}

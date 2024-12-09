@@ -10,17 +10,22 @@ const proyects = [
   },
   {
     img: "img/proyecto1.png",
-    title: "Prueba de titulo",
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsum veritatis maiores
-                        praesentium eligendi adipisci consectetur libero, rerum odio iste perferendis, corrupti est
-                        facere exercitationem eum suscipit totam! Fugiat, maxime?`,
+    title: "Clon de X",
+    description: `Desarrollé junto a Pedro Fede Casillas una red social funcional inspirada en X (Twitter) como
+     parte de una prueba técnica. La aplicación permite registro, inicio de sesión,
+      publicaciones y gestión de perfil, además de ser completamente responsive. Utilizamos tecnologías modernas 
+      como React + Vite, Tailwind CSS, JavaScript y Zustand en el front-end, y NestJS, TypeScript, MongoDB y Docker
+       en el back-end. Este proyecto refleja trabajo en equipo, capacidad de adaptación y desarrollo bajo presión.`,
   },
   {
     img: "img/proyecto2.png",
-    title: "Prueba de titulo",
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsum veritatis maiores
-                        praesentium eligendi adipisci consectetur libero, rerum odio iste perferendis, corrupti est
-                        facere exercitationem eum suscipit totam! Fugiat, maxime?`,
+    title: "Sports Book",
+    description: `Desarrollamos una dApp para coordinar encuentros y apuestas en eventos deportivos entre equipos no
+     profesionales, permitiendo crear desafíos entre equipos, definir un proveedor de locación (réferi) para validar 
+     resultados y gestionar apuestas de manera segura. Al cierre de cada encuentro, los premios se distribuyen al ganador,
+      al proveedor y al contrato Sportsbook. Además, se genera un NFT conmemorativo para los equipos.
+      <br> <br>
+      Este proyecto fue creado durante la hackathon de Think and Dev, donde tuve la oportunidad de trabajar con un equipo increíble y aprender sobre el mundo blockchain. ¡Fue mi primera hackathon, y ganamos el primer lugar! 🎉`,
   },
   {
     img: "img/proyecto3.png",

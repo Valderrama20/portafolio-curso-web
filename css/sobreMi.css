@@ -33,3 +33,17 @@
   border-radius: 20px;
   transform: rotate(0.006turn);
 }
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column-reverse;
+    padding: 30px 0;
+  }
+
+  .about .container1,
+  .about .container2 {
+    width: 100%;
+  }
+}

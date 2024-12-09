@@ -70,10 +70,10 @@ header {
 
 main {
   max-width: 800px;
+  height: 100%;
   align-content: center;
   margin: auto;
-  padding: 0 10px;
-  height: calc(100vh - 180px);
+  padding: 50px 20px;
 }
 
 .part1 img {
