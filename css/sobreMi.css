@@ -34,6 +34,44 @@
   transform: rotate(0.006turn);
 }
 
+/* Estilos de las tecnologias y herramientas */
+.technologies-container {
+  max-width: 800px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+#technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+#technologies-list li {
+  margin: 10px 15px;
+  list-style: none;
+  text-align: center;
+}
+
+.technologies-container img {
+  width: 50px;
+  transition: all 0.1s;
+}
+.technologies-container img:hover {
+  scale: 1.1;
+}
+
+.technologies-container h4 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.bgWhite {
+  background-color: white;
+  border-radius: 100%;
+}
+
 /* Responsive */
 
 @media (max-width: 600px) {
