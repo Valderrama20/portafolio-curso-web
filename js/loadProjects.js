@@ -7,6 +7,7 @@ const proyects = [
     altamente capacitados para una amplia gama de servicios, desde reparaciones de electrodomésticos hasta remodelaciones. 
     Además, brinda a los profesionales la oportunidad de expandir su alcance, ofreciendo sus servicios a una base de clientes
     más amplia y mejorando su visibilidad y posibilidades de trabajo.`,
+    code: "https://github.com/Valderrama20/JobMatch",
   },
   {
     img: "img/proyecto1.png",
@@ -16,6 +17,7 @@ const proyects = [
       publicaciones y gestión de perfil, además de ser completamente responsive. Utilizamos tecnologías modernas 
       como React + Vite, Tailwind CSS, JavaScript y Zustand en el front-end, y NestJS, TypeScript, MongoDB y Docker
        en el back-end. Este proyecto refleja trabajo en equipo, capacidad de adaptación y desarrollo bajo presión.`,
+    code: "https://github.com/Valderrama20/online-social-frontend",
   },
   {
     img: "img/proyecto2.png",
@@ -26,6 +28,7 @@ const proyects = [
       al proveedor y al contrato Sportsbook. Además, se genera un NFT conmemorativo para los equipos.
       <br> <br>
       Este proyecto fue creado durante la hackathon de Think and Dev, donde tuve la oportunidad de trabajar con un equipo increíble y aprender sobre el mundo blockchain. ¡Fue mi primera hackathon, y ganamos el primer lugar! 🎉`,
+    code: "https://github.com/Valderrama20/hackaton-2022-Gol",
   },
   {
     img: "img/proyecto3.png",
@@ -35,6 +38,7 @@ const proyects = [
       al Product Owner, garantizando una comunicación efectiva y alineación con los objetivos. Aplicamos diversas 
       tecnologías y lenguajes aprendidos en el bootcamp de Henry, con el objetivo de mejorar la experiencia de los
       usuarios al momento de alquilar una vivienda, simplificando cada paso del proceso.`,
+    code: "https://github.com/Valderrama20/Proyecto-Final-henry",
   },
   {
     img: "img/proyecto4.png",
@@ -42,10 +46,11 @@ const proyects = [
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsum veritatis maiores
                         praesentium eligendi adipisci consectetur libero, rerum odio iste perferendis, corrupti est
                         facere exercitationem eum suscipit totam! Fugiat, maxime?`,
+    code: "#",
   },
 ];
 
-const createCard = ({ img, title, description }, index) => {
+const createCard = ({ img, title, description, code }, index) => {
   const card = document.createElement("div");
   card.classList.add("proyect-container", "fade-in");
   card.style.animationDelay = `${index / 10}s`;
@@ -54,18 +59,11 @@ const createCard = ({ img, title, description }, index) => {
                     </div>
                     <div class="project-information">
                         <h3>${title}</h3>
-                        <div>
-                            <button class="tag">Next.js</button>
-                        </div>
                         <p> ${description} </p>
                         <div>
-                            <a class="aStyle">
+                            <a class="aStyle" href=${code} target="_blank">
                                  <i class="fa-brands fa-github"></i>
                                 Code
-                            </a>
-                            <a class="aStyle">
-                                <i class="fa-solid fa-link"></i>
-                                Preview
                             </a>
                         </div>
                     </div>`;

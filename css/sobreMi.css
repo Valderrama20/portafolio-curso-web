@@ -41,6 +41,10 @@
   margin: auto;
 }
 
+.technologies-container h2 {
+  font-size: 26px;
+}
+
 #technologies-list {
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +76,42 @@
   border-radius: 100%;
 }
 
+/* Estilos de la seccion sobre estudios */
+.estudy-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.estudy-container h2 {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+
+.estudy-container h2 img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px -10px 10px;
+}
+
+.estudy-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.estudy-list img {
+  width: 300px;
+  height: 200px;
+  transition: all 0.2s;
+  padding: 10px 0;
+}
+
+.estudy-list img:hover {
+  scale: 1.1;
+}
+
 /* Responsive */
 
 @media (max-width: 600px) {
@@ -83,5 +123,13 @@
   .about .container1,
   .about .container2 {
     width: 100%;
+  }
+
+  .technologies-container {
+    text-align: center;
+  }
+
+  .estudy-list {
+    flex-direction: column;
   }
 }

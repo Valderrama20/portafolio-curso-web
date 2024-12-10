@@ -47,7 +47,6 @@ const createCard = ({ role, company, period, description }, index) => {
                     <p>
                     ${description}
                     </p>
-                    <button>Saber mas <i class="fa-solid fa-angle-right"></i></button>
                 </div>
             `;
   return card;

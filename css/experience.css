@@ -63,9 +63,7 @@ main h1 {
 
 .description-card p {
   color: #dddddd;
-  font-size: 15px;
-  font-weight: 500;
-  margin: 0 0 15px 0;
+  font-size: 16px;
 }
 
 .description-card button {
