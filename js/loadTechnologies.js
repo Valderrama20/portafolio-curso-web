@@ -19,22 +19,30 @@ const technologies = [
   { img: "img/sequelize-logo.svg", title: "Sequelize" },
 ];
 
+// Función que crea un elemento de tarjeta (li) para mostrar información de un proyecto.
 const createCard = ({ img, title, bg }, index) => {
+  // Crea un elemento <div> que será el contenedor de la tarjeta.
   const card = document.createElement("li");
+
+  // Agrega las clases CSS al elemento para estilos y animación.
   card.classList.add("fade-in");
+
+  // Ajusta el retraso de la animación basado en el índice del proyecto.
   card.style.animationDelay = `${index / 10}s`;
+
+  // Define el contenido HTML interno de la tarjeta.
   card.innerHTML = `
-                       <img src=${img} alt=${title} class=${
-    bg ? "bgWhite" : ""
-  }>
-                       <h4>${title}</h4>
+                  <img src=${img} alt=${title} class=${bg ? "bgWhite" : ""}>
+                  <h4>${title}</h4>
                     `;
+  // Devuelve el elemento de la tarjeta creado.
   return card;
 };
 
+// Función autoejecutable que inicializa el contenedor de tarjetas y agrega las tarjetas dinámicamente.
 (() => {
   const cardContainer = document.getElementById("technologies-list");
-  technologies.forEach((proyect, index) =>
-    cardContainer.appendChild(createCard(proyect, index))
+  technologies.forEach(
+    (proyect, index) => cardContainer.appendChild(createCard(proyect, index)) // Agrega cada tarjeta creada al contenedor.
   );
 })();

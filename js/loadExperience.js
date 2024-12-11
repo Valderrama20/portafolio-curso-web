@@ -29,10 +29,18 @@ const experiences = [
   },
 ];
 
+// Función que crea un elemento de tarjeta (card) para mostrar información de un proyecto.
 const createCard = ({ role, company, period, description }, index) => {
+  // Crea un elemento <div> que será el contenedor de la tarjeta.
   const card = document.createElement("div");
+
+  // Agrega las clases CSS al elemento para estilos y animación.
   card.classList.add("experience-card", "fade-in");
+
+  // Ajusta el retraso de la animación basado en el índice del proyecto.
   card.style.animationDelay = `${index / 10}s`;
+
+  // Define el contenido HTML interno de la tarjeta.
   card.innerHTML = `
                 <div class="line">
                 </div>
@@ -49,12 +57,15 @@ const createCard = ({ role, company, period, description }, index) => {
                     </p>
                 </div>
             `;
+
+  // Devuelve el elemento de la tarjeta creado.
   return card;
 };
 
+// Función autoejecutable que inicializa el contenedor de tarjetas y agrega las tarjetas dinámicamente.
 (() => {
   const cardContainer = document.getElementById("cardContainer");
-  experiences.forEach((proyect, index) =>
-    cardContainer.appendChild(createCard(proyect, index))
+  experiences.forEach(
+    (proyect, index) => cardContainer.appendChild(createCard(proyect, index)) // Agrega cada tarjeta creada al contenedor.
   );
 })();

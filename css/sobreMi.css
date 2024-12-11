@@ -18,7 +18,7 @@
   color: #fef9c3;
 }
 
-.about .container2 {
+.container2 {
   text-align: center;
   align-content: center;
   width: 35%;
@@ -26,8 +26,8 @@
 }
 
 .about img {
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 235px;
   border: 1px solid gray;
   padding: 5px;
   border-radius: 20px;
